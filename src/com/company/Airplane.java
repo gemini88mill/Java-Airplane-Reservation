@@ -121,133 +121,26 @@ public class Airplane {
         char ch;
         int pos;
         int y = 0;
+        int economyX = 0;
         for(int x = 0; x < 257; x++){
+
+            //x = number of seat in total
+
             if(x < 8){
                 y = firstClassSeatConstructor(x, y);
             } else if (x >= 8 && x < 40){
                 y = businessClassSeatConstructor(x, y);
             } else {
-                y = economyClassSeatConstructor(x, y);
+                y = economyClassSeatConstructor(x, y, economyX);
+                economyX++;
             }
         }
 
-
-//        //todo refactor based on classes instead of one lump sum of places.
-//        //System.out.println("iteration");
-//        if(className.equals("TERM")){
-//            return 1;
-//        }else {
-//            if (className.equals("FIRST")) {
-//                for (int x = 0; x < numberOfSeats; x++) {
-//                    airplane.getSeats()[x].setOccupied(false);
-//                    airplane.getSeats()[x].setFirstClass(true);
-//                    airplane.getSeats()[x].setBusinessClass(false);
-//
-//                    if ((x % 4) == 0 || (x % 4) == 3) {
-//                        airplane.getSeats()[x].setWindowSeat(true);
-//                        airplane.getSeats()[x].setAisleSeat(false);
-//                    } else {
-//                        airplane.getSeats()[x].setAisleSeat(true);
-//                        airplane.getSeats()[x].setWindowSeat(false);
-//                    }
-//
-//                    //todo make new method that preforms this arbitrarily
-//
-////                    if((x % 4) == 0){
-////                        y++;
-////                    }
-////                        ch = (char) ('a' + x % 4);
-////                        airplane.getSeats()[x].setSeatName(Integer.toString(y));
-////                        String seatName = airplane.getSeats()[x].getSeatName() + ch;
-////                        //System.out.println(seatName.toUpperCase());
-////                        airplane.getSeats()[x].setSeatName(seatName.toUpperCase());
-//
-////                    if(x / airplane.getAirplaneRowDepthFirst() == 0){
-////                        ch = (char) ('a' + x % 4);
-////                        airplane.getSeats()[x].setSeatName("1");
-////                        String seatName = airplane.getSeats()[x].getSeatName() + ch;
-////                        //System.out.println(seatName.toUpperCase());
-////                        airplane.getSeats()[x].setSeatName(seatName.toUpperCase());
-////                    } else if(x / airplane.getAirplaneRowDepthFirst() == 1){
-////                        ch = (char) ('a' + (x % 4));
-////                        airplane.getSeats()[x].setSeatName("2");
-////                        String seatName = airplane.getSeats()[x].getSeatName() + ch;
-////                        //System.out.println(seatName.toUpperCase());
-////                        airplane.getSeats()[x].setSeatName(seatName.toUpperCase());
-////                    }
-//                }
-//                //System.out.println("in first");
-//                return airplaneSeatConstructor(airplane, "BUSINESS", 40);
-//            }
-//            if (className.equals("BUSINESS")) {
-//                //y = airplane.airplaneLengthFirst;
-//                for (int x = 0; x < numberOfSeats; x++) {
-//                    airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].setBusinessClass(true);
-//                    airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].setFirstClass(false);
-//                    airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].setOccupied(false);
-//
-////                    //window seat marker
-////                    if ((x % 8) == 0 || (x % 8) == 7) {
-////                        airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].setWindowSeat(true);
-////                        airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].setAisleSeat(false);
-////                    }
-////                    //aisle seat marker
-////                    else if((x % 8) == 1 || (x % 8) == 2 || (x % 8) == 5 || (x % 8) == 6){
-////                        airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].setWindowSeat(false);
-////                        airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].setAisleSeat(true);
-////                    }
-////                    //neither window or aisle seat marker
-////                    else {
-////                        airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].setAisleSeat(false);
-////                        airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].setWindowSeat(false);
-////                    }
-//
-//                    if((x % 8) == 0){
-//                        y++;
-//                    }
-//                    ch = (char) ('a' + x % 8);
-//                    airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].setSeatName(Integer.toString(y));
-//                    String seatName = airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].getSeatName() + ch;
-//                    //System.out.println(seatName.toUpperCase());
-//                    airplane.getSeats()[x].setSeatName(seatName.toUpperCase());
-//
-////                    if(x / airplane.getAirplaneRowDepthBusiness() == 0){
-////                        ch = (char) ('a' + x % 8);
-////                        airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].setSeatName(Integer.toString(airplane.getAirplaneRowDepthFirst() + 1));
-////                        String seatName = airplane.getSeats()[ airplane.getNumberOfSeatsPerClass()[0] + x].getSeatName() + ch;
-////                        //System.out.println(seatName.toUpperCase());
-////                        airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].setSeatName(seatName.toUpperCase());
-////                    } else if(x / airplane.getAirplaneRowDepthFirst() == 1){
-////                        ch = (char) ('a' + (x % 8));
-////                        airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].setSeatName("2");
-////                        String seatName = airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].getSeatName() + ch;
-////                        //System.out.println(seatName.toUpperCase());
-////                        airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + x].setSeatName(seatName.toUpperCase());
-////                    }
-//
-//                }
-//                //System.out.println("in business");
-//                return airplaneSeatConstructor(airplane, "ECONOMY", 209);
-//            }
-//            if (className.equals("ECONOMY")) {
-//                for (int x = 0; x < numberOfSeats; x++) {
-//                    airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + airplane.getNumberOfSeatsPerClass()[1] + x].setBusinessClass(false);
-//                    airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + airplane.getNumberOfSeatsPerClass()[1] + x].setFirstClass(false);
-//                    airplane.getSeats()[airplane.getNumberOfSeatsPerClass()[0] + airplane.getNumberOfSeatsPerClass()[1] + x].setOccupied(false);
-//                }
-//                //System.out.println("in economy");
-//                return airplaneSeatConstructor(airplane, "SPECIAL", 26);
-//            }
-//            if (className.equals("SPECIAL")) {
-//               // System.out.println("in special");
-//                return airplaneSeatConstructor(airplane, "TERM", 273);
-//            }
-//        }
         return 0;
 
     }
 
-    private int economyClassSeatConstructor(int x, int y) {
+    private int economyClassSeatConstructor(int x, int y, int economyX) {
 
         char ch;
 
@@ -266,14 +159,18 @@ public class Airplane {
             getSeats()[x].setWindowSeat(false);
         }
 
-        if((x % 9) <= 0){
+        //need to make x and y reset to account for the displacement in the economy class
+
+        if((economyX % 9) <= 0){
             y++;
         }
-        ch = (char) ('a' + x % 9);
+
+        ch = (char) ('a' + economyX % 9);
         getSeats()[x].setSeatName(Integer.toString(y));
         String seatName = getSeats()[x].getSeatName() + ch;
         System.out.println(seatName.toUpperCase());
         getSeats()[x].setSeatName(seatName.toUpperCase());
+
 
         return y;
     }
