@@ -7,5 +7,41 @@ package com.company;
  */
 public class UI {
 
+    public static void main(String[] args) {
+        // write your code here
+        System.out.println("Hello World");
+
+
+
+        String[] classNames = {"FIRST", "BUSINESS", "ECONOMY", "SPECIAL"};
+        int[] numberOfSeatsPerClass = {8, 40, 209};
+        int totalSeats = 257;
+
+        Airplane airplane = new Airplane("Boeing", "JFK", "MIA", classNames, numberOfSeatsPerClass, "777",
+                new Seat[totalSeats], 4, 8, 9);
+        airplane.setAirplaneLengthFirst(2);
+        airplane.setAirplaneLengthBusiness(5);
+        airplane.setAirplaneLengthEconomy(26);
+
+        airplane.seatConstructor(airplane.getSeats());
+
+        int i = airplane.airplaneSeatConstructor(airplane, "FIRST", airplane.getNumberOfSeatsPerClass()[0]);
+
+        //airplane seats are now properly constructed and ready for purchase
+        //System.out.println("i = " + i);
+
+        System.out.println("Airplane: " + airplane.getAirplaneName());
+        System.out.println("Depart: " + airplane.getAirplaneDepartureLocation());
+        System.out.println("Arrive: " + airplane.getAirplaneArrivalLocation());
+        System.out.println("Seats: "  + airplane.getSeats().length);
+        System.out.println("");
+        System.out.println("");
+
+        //assign passenger to seat
+        airplane.assignPassenger(new Passenger("John Doe", "WINDOW", "FIRST", null));
+
+
+    }
+
 
 }
