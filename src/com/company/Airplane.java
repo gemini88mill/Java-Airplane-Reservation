@@ -73,7 +73,7 @@ public class Airplane {
             }
         }
 
-        availableSeats.get()
+
 
         //goes to dialog for seat selector
         //ui.seatSelectionPrompt(passenger, availableSeats);

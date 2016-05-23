@@ -5,7 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Airplane Reservation System/com/company/UI.class" afterPath="$PROJECT_DIR$/out/production/Airplane Reservation System/com/company/UI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Airplane.java" afterPath="$PROJECT_DIR$/src/com/company/Airplane.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/UI.java" afterPath="$PROJECT_DIR$/src/com/company/UI.java" />
     </list>
     <ignored path="Airplane Reservation System.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,21 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Airplane.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Airplane.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Airplane.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="646">
-              <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
+              <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#airplaneSeatConstructor#0;class#Airplane#0" expanded="false" />
                 <element signature="method#economyClassSeatConstructor#0;class#Airplane#0" expanded="false" />
                 <element signature="method#businessClassSeatConstructor#0;class#Airplane#0" expanded="false" />
                 <element signature="method#firstClassSeatConstructor#0;class#Airplane#0" expanded="false" />
-                <element signature="e#7000#7001#0" expanded="true" />
-                <element signature="e#7035#7036#0" expanded="true" />
-                <element signature="e#7189#7190#0" expanded="true" />
-                <element signature="e#7235#7236#0" expanded="true" />
+                <element signature="e#6980#6981#0" expanded="true" />
+                <element signature="e#7015#7016#0" expanded="true" />
+                <element signature="e#7169#7170#0" expanded="true" />
+                <element signature="e#7215#7216#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UI.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/UI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
-              <caret line="43" column="57" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+              <caret line="43" column="56" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#UI#0" expanded="false" />
@@ -127,8 +126,8 @@
         <option value="$PROJECT_DIR$/src/com/company/Seat.java" />
         <option value="$PROJECT_DIR$/src/com/company/Passenger.java" />
         <option value="$PROJECT_DIR$/src/com/company/Fleet.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Airplane.java" />
         <option value="$PROJECT_DIR$/src/com/company/UI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Airplane.java" />
       </list>
     </option>
   </component>
@@ -665,7 +664,7 @@
       <workItem from="1463623735594" duration="167000" />
       <workItem from="1463624030462" duration="3133000" />
       <workItem from="1463770463743" duration="10669000" />
-      <workItem from="1463958991577" duration="3691000" />
+      <workItem from="1463958991577" duration="3717000" />
     </task>
     <task id="LOCAL-00001" summary="issues with seat name creator, failing to create truly unique names in order">
       <created>1463959122299</created>
@@ -688,11 +687,18 @@
       <option name="project" value="LOCAL" />
       <updated>1463960571514</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ready for trie sorting method">
+      <created>1463962713279</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1463962713279</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34498000" />
+    <option name="totallyTimeSpent" value="34524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -740,7 +746,8 @@
     <MESSAGE value="issues with seat name creator, failing to create truly unique names in order" />
     <MESSAGE value="solved problem with additional variable for economy class" />
     <MESSAGE value="moved main method to UI class" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved main method to UI class" />
+    <MESSAGE value="ready for trie sorting method" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready for trie sorting method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -761,10 +768,10 @@
             <element signature="method#economyClassSeatConstructor#0;class#Airplane#0" expanded="false" />
             <element signature="method#businessClassSeatConstructor#0;class#Airplane#0" expanded="false" />
             <element signature="method#firstClassSeatConstructor#0;class#Airplane#0" expanded="false" />
-            <element signature="e#7000#7001#0" expanded="true" />
-            <element signature="e#7035#7036#0" expanded="true" />
-            <element signature="e#7189#7190#0" expanded="true" />
-            <element signature="e#7235#7236#0" expanded="true" />
+            <element signature="e#6980#6981#0" expanded="true" />
+            <element signature="e#7015#7016#0" expanded="true" />
+            <element signature="e#7169#7170#0" expanded="true" />
+            <element signature="e#7215#7216#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -824,10 +831,10 @@
             <element signature="method#economyClassSeatConstructor#0;class#Airplane#0" expanded="false" />
             <element signature="method#businessClassSeatConstructor#0;class#Airplane#0" expanded="false" />
             <element signature="method#firstClassSeatConstructor#0;class#Airplane#0" expanded="false" />
-            <element signature="e#7000#7001#0" expanded="true" />
-            <element signature="e#7035#7036#0" expanded="true" />
-            <element signature="e#7189#7190#0" expanded="true" />
-            <element signature="e#7235#7236#0" expanded="true" />
+            <element signature="e#6980#6981#0" expanded="true" />
+            <element signature="e#7015#7016#0" expanded="true" />
+            <element signature="e#7169#7170#0" expanded="true" />
+            <element signature="e#7215#7216#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -879,10 +886,10 @@
             <element signature="method#economyClassSeatConstructor#0;class#Airplane#0" expanded="false" />
             <element signature="method#businessClassSeatConstructor#0;class#Airplane#0" expanded="false" />
             <element signature="method#firstClassSeatConstructor#0;class#Airplane#0" expanded="false" />
-            <element signature="e#7000#7001#0" expanded="true" />
-            <element signature="e#7035#7036#0" expanded="true" />
-            <element signature="e#7189#7190#0" expanded="true" />
-            <element signature="e#7235#7236#0" expanded="true" />
+            <element signature="e#6980#6981#0" expanded="true" />
+            <element signature="e#7015#7016#0" expanded="true" />
+            <element signature="e#7169#7170#0" expanded="true" />
+            <element signature="e#7215#7216#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -926,10 +933,10 @@
             <element signature="method#economyClassSeatConstructor#0;class#Airplane#0" expanded="false" />
             <element signature="method#businessClassSeatConstructor#0;class#Airplane#0" expanded="false" />
             <element signature="method#firstClassSeatConstructor#0;class#Airplane#0" expanded="false" />
-            <element signature="e#7000#7001#0" expanded="true" />
-            <element signature="e#7035#7036#0" expanded="true" />
-            <element signature="e#7189#7190#0" expanded="true" />
-            <element signature="e#7235#7236#0" expanded="true" />
+            <element signature="e#6980#6981#0" expanded="true" />
+            <element signature="e#7015#7016#0" expanded="true" />
+            <element signature="e#7169#7170#0" expanded="true" />
+            <element signature="e#7215#7216#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -973,10 +980,10 @@
             <element signature="method#economyClassSeatConstructor#0;class#Airplane#0" expanded="false" />
             <element signature="method#businessClassSeatConstructor#0;class#Airplane#0" expanded="false" />
             <element signature="method#firstClassSeatConstructor#0;class#Airplane#0" expanded="false" />
-            <element signature="e#7000#7001#0" expanded="true" />
-            <element signature="e#7035#7036#0" expanded="true" />
-            <element signature="e#7189#7190#0" expanded="true" />
-            <element signature="e#7235#7236#0" expanded="true" />
+            <element signature="e#6980#6981#0" expanded="true" />
+            <element signature="e#7015#7016#0" expanded="true" />
+            <element signature="e#7169#7170#0" expanded="true" />
+            <element signature="e#7215#7216#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1020,10 +1027,10 @@
             <element signature="method#economyClassSeatConstructor#0;class#Airplane#0" expanded="false" />
             <element signature="method#businessClassSeatConstructor#0;class#Airplane#0" expanded="false" />
             <element signature="method#firstClassSeatConstructor#0;class#Airplane#0" expanded="false" />
-            <element signature="e#7000#7001#0" expanded="true" />
-            <element signature="e#7035#7036#0" expanded="true" />
-            <element signature="e#7189#7190#0" expanded="true" />
-            <element signature="e#7235#7236#0" expanded="true" />
+            <element signature="e#6980#6981#0" expanded="true" />
+            <element signature="e#7015#7016#0" expanded="true" />
+            <element signature="e#7169#7170#0" expanded="true" />
+            <element signature="e#7215#7216#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1091,24 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Airplane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#airplaneSeatConstructor#0;class#Airplane#0" expanded="false" />
-            <element signature="method#economyClassSeatConstructor#0;class#Airplane#0" expanded="false" />
-            <element signature="method#businessClassSeatConstructor#0;class#Airplane#0" expanded="false" />
-            <element signature="method#firstClassSeatConstructor#0;class#Airplane#0" expanded="false" />
-            <element signature="e#7000#7001#0" expanded="true" />
-            <element signature="e#7035#7036#0" expanded="true" />
-            <element signature="e#7189#7190#0" expanded="true" />
-            <element signature="e#7235#7236#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Seat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1120,10 +1109,28 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/UI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="43" column="57" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+          <caret line="43" column="56" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#UI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Airplane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#airplaneSeatConstructor#0;class#Airplane#0" expanded="false" />
+            <element signature="method#economyClassSeatConstructor#0;class#Airplane#0" expanded="false" />
+            <element signature="method#businessClassSeatConstructor#0;class#Airplane#0" expanded="false" />
+            <element signature="method#firstClassSeatConstructor#0;class#Airplane#0" expanded="false" />
+            <element signature="e#6980#6981#0" expanded="true" />
+            <element signature="e#7015#7016#0" expanded="true" />
+            <element signature="e#7169#7170#0" expanded="true" />
+            <element signature="e#7215#7216#0" expanded="true" />
           </folding>
         </state>
       </provider>
