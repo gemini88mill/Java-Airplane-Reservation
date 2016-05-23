@@ -60,10 +60,23 @@ public class Airplane {
 
 
     public void assignPassenger(Passenger passenger) {
-        //assigns passenger to seat
-        ArrayList<Seat> AvailableSeats = new ArrayList<>();
+        //assigns passenger to
+        UI ui = new UI();
+        ArrayList<Seat> availableSeats = new ArrayList<>();
 
         //todo add all the seats, negating the already occupied seats
+
+        for(int x = 0; x < getSeats().length; x++){
+            //add seats to ArrayList of seats.
+            if(!getSeats()[x].isOccupied()){
+                availableSeats.add(getSeats()[x]);
+            }
+        }
+
+        availableSeats.get()
+
+        //goes to dialog for seat selector
+        //ui.seatSelectionPrompt(passenger, availableSeats);
         
         //tag passenger to seat on plane
         //mark seat as occupied

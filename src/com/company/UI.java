@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  * Created by gemin on 5/11/2016.
  *
@@ -37,11 +40,19 @@ public class UI {
         System.out.println("");
         System.out.println("");
 
+        //need a few methods for sorting seats to find them quickly
+        //todo sorting method to find seats on airplanes
+
         //assign passenger to seat
-        airplane.assignPassenger(new Passenger("John Doe", "WINDOW", "FIRST", null));
+        //airplane.assignPassenger(new Passenger("John Doe", "WINDOW", "FIRST", null));
 
 
     }
 
 
+    public void seatSelectionPrompt(Passenger passenger, ArrayList<Seat> availableSeats) {
+        Scanner scan = new Scanner(System.in);
+
+
+    }
 }
