@@ -1,8 +1,12 @@
 package com.company;
 
+import java.util.List;
+
 /**
  * Created by gemin on 5/11/2016.
  */
+
+
 public class Seat {
 
     private String seatName;
@@ -11,6 +15,8 @@ public class Seat {
     private boolean isWindowseat;
     private boolean isAisleSeat;
     private boolean isOccupied;
+
+    //--------------------------------------constructors----------------------------------------------------------------
 
     public Seat(String seatName, boolean isFirstClass, boolean isBusinessClass, boolean isWindowseat,
                 boolean isAisleSeat, boolean isOccupied) {
@@ -21,6 +27,22 @@ public class Seat {
         this.isAisleSeat = isAisleSeat;
         this.isOccupied = isOccupied;
     }
+
+    //todo effective sorting method for seats
+    //inserts a seat into the trie
+    public void insert(Seat seat){
+
+    }
+
+    public void search(){
+
+    }
+
+    public void startsWith(){
+
+    }
+
+
 
     public String getSeatName() {
         return seatName;

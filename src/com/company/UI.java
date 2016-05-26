@@ -21,7 +21,7 @@ public class UI {
         int totalSeats = 257;
 
         Airplane airplane = new Airplane("Boeing", "JFK", "MIA", classNames, numberOfSeatsPerClass, "777",
-                new Seat[totalSeats], 4, 8, 9);
+                new Seat[totalSeats], 4, 8, 9, 257);
         airplane.setAirplaneLengthFirst(2);
         airplane.setAirplaneLengthBusiness(5);
         airplane.setAirplaneLengthEconomy(26);
@@ -29,6 +29,7 @@ public class UI {
         airplane.seatConstructor(airplane.getSeats());
 
         int i = airplane.airplaneSeatConstructor(airplane, "FIRST", airplane.getNumberOfSeatsPerClass()[0]);
+        airplane.sortSeats(airplane.getSeats());
 
         //airplane seats are now properly constructed and ready for purchase
         //System.out.println("i = " + i);
@@ -42,6 +43,7 @@ public class UI {
 
         //need a few methods for sorting seats to find them quickly
         //todo sorting method to find seats on airplanes
+
 
         //assign passenger to seat
         //airplane.assignPassenger(new Passenger("John Doe", "WINDOW", "FIRST", null));

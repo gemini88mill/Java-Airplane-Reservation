@@ -16,18 +16,44 @@ public class Passenger {
     private String passengerClassPreference; //economy, business, or first
     private String passengerSeatAssignment;
 
+
+    //--------------------------------------constructors----------------------------------------------------------------
+
     public Passenger(String passengerMealOption, boolean isFirstClass, String passengerLuggageCount) {
         this.passengerMealOption = passengerMealOption;
         this.isFirstClass = isFirstClass;
         this.passengerLuggageCount = passengerLuggageCount;
     }
 
-    public Passenger(String passengerName, String passengerSeatRequest, String passengerClassPreference, String passengerSeatAssignment) {
+    public Passenger(String passengerName, String passengerSeatRequest, String passengerClassPreference,
+                     String passengerSeatAssignment) {
         this.passengerName = passengerName;
         this.passengerSeatRequest = passengerSeatRequest;
         this.passengerClassPreference = passengerClassPreference;
         this.passengerSeatAssignment = passengerSeatAssignment;
     }
+    //------------------------------------------------------------------------------------------------------------------
+
+    public void assignPassengerToSeat(Passenger passenger, Seat[] seat, Airplane airplane){
+        //gets passenger information and assigns passenger to the seats available
+
+        //check if seat is occupied
+        Seat[] availableSeats = new Seat[airplane.getAirplaneMaxSeats()];
+
+        for (int i = 0; i < seat.length; i++){
+            if(!seat[i].isOccupied()){
+
+            }
+        }
+
+        //check passenger credentials
+        //show seats available
+        //mark seat for passenger
+        //mark seat as occupied.
+    }
+
+
+    //---------------------------getters and setters--------------------------------------------------------------------
 
     public String getPassengerName() {
         return passengerName;

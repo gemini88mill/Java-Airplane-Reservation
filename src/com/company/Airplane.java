@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Public class Airplane. Airplane is used as the main class.
@@ -17,6 +18,7 @@ public class Airplane {
 
     //Description objects
     private String airplaneName;
+    private int airplaneMaxSeats;
 
     //Location Objects
     private String airplaneArrivalLocation;
@@ -41,9 +43,12 @@ public class Airplane {
     private Date departureTime;
     private Date arrivalTime;
 
+    //--------------------------------------constructors----------------------------------------------------------------
+
     public Airplane(String airplaneName, String airplaneArrivalLocation, String airplaneDepartureLocation,
                     String[] classNames, int[] numberOfSeatsPerClass, String planeType, Seat[] seats,
-                    int airplaneRowDepthFirst, int airplaneRowDepthBusiness, int airplaneRowDepthEconomy) {
+                    int airplaneRowDepthFirst, int airplaneRowDepthBusiness, int airplaneRowDepthEconomy,
+                    int airplaneMaxSeats ) {
 
         this.airplaneName = airplaneName;
         this.airplaneArrivalLocation = airplaneArrivalLocation;
@@ -55,9 +60,15 @@ public class Airplane {
         this.airplaneRowDepthFirst = airplaneRowDepthFirst;
         this.airplaneRowDepthBusiness = airplaneRowDepthBusiness;
         this.airplaneRowDepthEconomy = airplaneRowDepthEconomy;
+        this.airplaneMaxSeats = airplaneMaxSeats;
     }
 
 
+    public void sortSeats(Seat[] seats) {
+        List<Seat> airplaneSeats;
+
+
+    }
 
     public void assignPassenger(Passenger passenger) {
         //assigns passenger to
@@ -73,8 +84,6 @@ public class Airplane {
             }
         }
 
-
-
         //goes to dialog for seat selector
         //ui.seatSelectionPrompt(passenger, availableSeats);
         
@@ -88,8 +97,6 @@ public class Airplane {
     public void seatConstructor(Seat[] seats) {
         for(int x = 0; x < seats.length; x++) seats[x] = new Seat(null, false, false, false, false, false);
     }
-
-
 
     public int airplaneSeatConstructor(Airplane airplane, String className, int numberOfSeats){
         /*Airplane Seat Creator, loops through the seats and attaches credentials to them based on the type of plane
@@ -321,5 +328,29 @@ public class Airplane {
 
     public void setAirplaneLengthBusiness(int airplaneLengthBusiness) {
         this.airplaneLengthBusiness = airplaneLengthBusiness;
+    }
+
+    public int getAirplaneMaxSeats() {
+        return airplaneMaxSeats;
+    }
+
+    public void setAirplaneMaxSeats(int airplaneMaxSeats) {
+        this.airplaneMaxSeats = airplaneMaxSeats;
+    }
+
+    public Date getDepartureTime() {
+        return departureTime;
+    }
+
+    public void setDepartureTime(Date departureTime) {
+        this.departureTime = departureTime;
+    }
+
+    public Date getArrivalTime() {
+        return arrivalTime;
+    }
+
+    public void setArrivalTime(Date arrivalTime) {
+        this.arrivalTime = arrivalTime;
     }
 }
