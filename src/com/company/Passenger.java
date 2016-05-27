@@ -40,7 +40,7 @@ public class Passenger {
     }
     //------------------------------------------------------------------------------------------------------------------
 
-    public void assignPassengerToSeat(Passenger passenger, Seat[] seat, Airplane airplane){
+    public void assignPassengerToSeat(Passenger passenger, Seat[] seat, Airplane airplane) {
         //gets passenger information and assigns passenger to the seats available
 
         classLabeler(passenger);
@@ -48,10 +48,10 @@ public class Passenger {
         //check if seat is occupied
         Seat[] availableSeats = new Seat[airplane.getAirplaneMaxSeats()];
 
-        for (int i = 0; i < seat.length; i++){
+        for (int i = 0; i < seat.length; i++) {
 
             //if seat is not occupied, put seats in available seats
-            if(!seat[i].isOccupied()){
+            if (!seat[i].isOccupied()) {
                 availableSeats[i] = seat[i];
             }
 
@@ -60,22 +60,31 @@ public class Passenger {
         //Seat[] classSpecificSeats = new Seat[availableSeats.length];
         List<Seat> classSeats = new ArrayList<>();
 
-        for(int i = 0; i < availableSeats.length; i++){
-            if(availableSeats[i].isFirstClass() == passenger.isFirstClass()){
-                classSeats.add(availableSeats[i]);
+        for (int i = 0; i < availableSeats.length; i++) {
+            if (availableSeats[i].isFirstClass() == passenger.isFirstClass()) {
+                if (availableSeats[i].isWindowseat() == passenger.isWindowSeat() || availableSeats[i].isAisleSeat() == passenger.isAisle()) {
+                    classSeats.add(availableSeats[i]);
+                }
             }
-            if(availableSeats[i].isBusinessClass() == passenger.isBusinessClass()){
-                classSeats.add(availableSeats[i]);
+            if (availableSeats[i].isBusinessClass() == passenger.isBusinessClass()) {
+                if (availableSeats[i].isWindowseat() == passenger.isWindowSeat() || availableSeats[i].isAisleSeat() == passenger.isAisle()) {
+                    classSeats.add(availableSeats[i]);
+                }
+            } else {
+                if (availableSeats[i].isWindowseat() == passenger.isWindowSeat() || availableSeats[i].isAisleSeat() == passenger.isAisle()) {
+                    classSeats.add(availableSeats[i]);
+                }
+
             }
+            //ex: Passenger(Joe smith, window, first, null)
+            //ex: Seat(1A, First Class, Window)
+
+            //check passenger credentials
+
+            //show seats available
+            //mark seat for passenger
+            //mark seat as occupied.
         }
-        //ex: Passenger(Joe smith, window, first, null)
-        //ex: Seat(1A, First Class, Window)
-
-        //check passenger credentials
-
-        //show seats available
-        //mark seat for passenger
-        //mark seat as occupied.
     }
 
     private void classLabeler(Passenger passenger) {
