@@ -84,6 +84,8 @@ public class Passenger {
             //show seats available
             //mark seat for passenger
             //mark seat as occupied.
+
+            //todo test assignPassenger method
         }
     }
 
